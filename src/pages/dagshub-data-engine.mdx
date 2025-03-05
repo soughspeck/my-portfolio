@@ -1,0 +1,138 @@
+---
+layout: "../layouts/article-layout.astro"
+title: "DagsHub Data Engine"
+description: "Data management tool for ML Engineers from ideation to shipment"
+date: "2024"
+---
+import ImageWithCaption from '../components/ImageWithCaption.astro';
+
+# Data management tool for ML Engineers from design to shipment
+
+<ImageWithCaption
+  src="/assets/data-engine-cover.svg"
+  alt="DagsHub Data Engine"
+  />
+
+**Time period**
+September 2023 - now
+**Role**
+Lead Product Designer
+**Links**
+[link to prod](https://dagshub.com/Dean/COCO_1K/datasets?gallery=dataset&id=95)
+
+
+I will begin on one general note – the state of the domain I was working with. It is characterized by a lack of industry standards. AI dev tools are currently at the peak of their development, and growing pains were my constant companion. For me personally, that was also somewhat true, as I joined the company, expanding my responsibilities from being within a product team of 6 in a big and established institution, to becoming first and solo designer in a start-up. I was learning on the go about the new ways of working, the domain and dev tools in general. That was a challenge and opportunity for me at the same time.  
+
+### Problem space: how ML engineers work with data?
+
+The Data Engine feature project was initiated as a product decision to pivot the company’s efforts towards data management. Data is one of the most challenging components in the work of a Data Scientist/ML Engineer, especially when they have models in production and a constant need to gather, curate and maintain pipelines of data for their machine learning projects. To illustrate this cycle, let’s look at a PM diagram, which shows a value proposition defined for this feature.  
+
+<ImageWithCaption
+  src="../assets/data-engine-value-proposition.png" 
+  alt="Value proposition" 
+  caption="Value proposition" 
+/>
+
+Before we started working, there was no easy way to visualize and filter users’ data on the platform, as all the infrastructure was looked like git directories, with no data-type specific previews for images, audio, video, tabular and other types of data. In addition to that, there was a need to create an advanced querying component, which would fit common practices for ML Engineers and other user personas, such as Annotators or ML Team Leads, who are the potential users of this feature.  
+
+### Goal: seamless integration into an existing infrastructure
+
+The goal of this project was to create a component on the platform, that would be seamlessly integrated with other components, such as tracking and versioning code, data, experiments and annotations.  
+
+### Navigating the unknown
+
+At the beginning, the definition of the feature was very broad and vague. Given the scale and the extensive technical effort needed, my questions at the initial stage of the project remained unanswered, both from the dev leads and product stakeholders. At that point I could not gather a lot of information on the details of the implementation.  
+
+_What kind of filters would we like to develop? What are the requirements for them (e.g. input-based, range-based, time/date based, etc.)? How does the metadata look like? Are there specific categories? Is there 1-1 relationship between the metadata field and the value? etc._  
+
+### POC: sales demo
+
+At the same time, we needed to move fast, and even without my questions answered, we needed to test our product hypothesis with potential customers. The first design version was decided to be a sales demo prototype. During the sales pitch, we asked for general and more specific feedback from potential clients. Therefore I decided to lean on my previous experience working with library catalog databases and search experience (see [NLI search redesign](https://www.annahyatt.com/nli-search-system-redesign)), regardless of the yet-to-be defined requirements and specs, and refine and iterate on the way.  
+
+_We received a proof for our hypothesis, with lots of voices stating that collecting, maintaining and making sense of the data was one of the biggest challenges that ML Engineers and their teams are facing. And the solution we showed them was appreciated, providing transparency and visibility to the data pipelines for their model development projects._  
+
+### Research and design: 1. Competitor research
+
+I started my research by investigating competitor products with similar features, and putting notes or adding questions for stakeholders on noteworthy elements and design choices. Overall, I thoroughly went through 10 competitor products on the market.  
+
+<ImageWithCaption
+  src="../assets/competitors-review.png" 
+  alt="My FigJam board with competitor products review" 
+  caption="My FigJam board with competitor products review" 
+/>
+
+This way, I got a rough understanding on how such a feature could look like. I identified the way other products solve common UX problems (e.g.: _how to present search and filtering, display metadata, display different types of media, how the connection between the code, data and models is presented and more_).  I also got insights on potentially interesting features we did not think of, and in general got a wide picture on current market landscape.  
+
+### Research and design: 2. First design version
+
+I started out with designing a general solution to provide the team with the sense of how the feature could look like when it will be developed. I also hoped that I would get more specific feedback and questions once the team will see the proposed solution in front of their eyes.  
+
+<ImageWithCaption
+  src="../assets/data-engine-first-design-mock.gif" 
+  alt="First design mock" 
+  caption="First design mock" 
+/>
+
+As the first designer in the company, in parallel I was establishing the first Design System for the product, so I was designing and documenting every component for it.  
+
+### Research and design: 3. Domain expert interviews and feedback sessions
+
+When the first rough version of the design was ready, me and the PM conducted several  interviews with potential customers to discover their needs around this feature and hear feedback.  
+
+<ImageWithCaption
+  src="../assets/domain-experts-interview.jpg" 
+  alt="Feedback session with potential customer" 
+  caption="Feedback session with potential customer" 
+/>
+
+Here are some of the questions and feedback from these interviews:  
+> *– “I think that a big part of the value is to provide the API and not just the UI … when you talk about researchers that watch large datasets”*  
+> *– “Most researches work via programming, it will be more natural for them to use”*  
+> *– “It will allow researchers to integrate this with other tools they are using easily… for example, add function at the end of each training that generates the results visually…instead of trying to create this display again in the UI, I know what will be interesting for me to see at the end of each training so I’ll automatically have it generated”*  
+  
+The feedback made us decide to move forward with building the backend API as the first stage of the project. In parallel, we looked for ways to bring as much value as we could using these capabilities.  
+
+### Design partners
+
+To better define the design and specifications, we chose a product strategy called “design partnership”. During sales talks with potential customers, we presented my design mock and explained the value proposition. We then offered a discount for the feature in return for feedback while we were building it.  
+This strategy proved to be a win-win. The clients received value from using the feature, and we, based on their feedback, better defined, improved, and shipped a product that provided more significant value.  
+As a result, our understanding of the technical requirements for the feature evolved. In parallel I refined my mock as our dev team was building the first backend API capabilities.  
+
+**_Some of the questions still remained unanswered, and some of the clients’ requests were very specific for their use case, but overall, having these inputs proved to be very valuable, as we did not act in vacuum and expanded our list of paying customers._**  
+
+### Design versions
+
+After a series of customers’ and potential customers’ interviews, together with the PM, we worked on defining the user flow for the feature, and I then created a user map. Things were starting to get much more clear.  
+
+### User flows
+
+<ImageWithCaption
+  src="../assets/data-engine-user-flows.png" 
+  alt="User flows" 
+  caption="User flows" 
+/>
+
+My mock changed a lot, I iterated and refined it based on the clients feedback, and on the tech requirements I  received from the stakeholders.  
+We continued to work with the PM, dev lead and CTO to define the scope for the first MVP.  I reduced the scope of my mock, and created another version only with the elements needed for the first MVP.  
+The feature is still rolling out, and we’re receiving feedback from the design partners.  
+Here are some of the inputs I received:  
+>_“Wouldn't_ **_incorporating a text editor_** _be a valuable addition, providing more than just query construction? What are your thoughts on_ **_implementing queries similar to SQL_**_?”_  
+
+>_“It’s great that the query is fully translatable between UI and text!”_  
+
+>_”I think it is_ **_very useful to see the number of items in each dataset_** _from the main “Sources” page. maybe also “_**_created by_**_” ? and “_**_tags_**_” attached to each dataset.”_  
+
+### Conclusion
+
+Here’s a current state of the [Data Engine feature in production](https://dagshub.com/Dean/COCO_1K/datasets/dataset/269/gallery?metadata=WyJhbm5vdGF0aW9uIl0%3D):  
+
+<ImageWithCaption
+  src="../assets/data-engine-production.png" 
+  alt="Data Engine screenshot from production" 
+  caption="Data Engine screenshot from production" 
+/>
+
+The feature is still rolling out, and I’m listening and watching closely to user feedback. Overall, it received very good responses both from the clients and from the stakeholders.  
+‍  
+We were able to **double the amount of paying customers** by offering this feature roughly in half a year.  
+

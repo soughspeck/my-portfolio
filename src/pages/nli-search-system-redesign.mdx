@@ -1,0 +1,152 @@
+---
+layout: "../layouts/article-layout.astro"
+title: "NLI (The National Library of Israel) Search System Redesign"
+description: "Redesign for the National Library search system, the “heart” of digital library"
+date: "2022"
+---
+
+# NLI search system redesign
+Redesign for the National Library search system, the “heart” of digital library
+
+![Mockup showing before and after](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62c96d0e09e7a28401e1ff02_search-hero.jpg)
+
+
+
+
+| Time period | February - October 2021                                                                                                                                                       |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Client      | The National Library of Israel                                                                                                                                                |
+| Role        | UI, UX, prototyping, visual research, mockups                                                                                                                                 |
+| Links       | [Beta version (live)](https://www.nli.org.il/he/search?projectName=NLI#&q=any,contains,%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D&bulkSize=30&index=0&sort=rank&t=allresults) |
+
+
+### Starting point
+
+To begin with, _search_ lies in the heart of the library as a digital archive and its mission for accessible digitized materials. I believe that in our new digital era search experience is a deal-breaker for Libraries.  
+
+### Goal
+
+Currently, the Library uses "Primo Ex-Libris" OTB solution, with some little tweaks done throughout the years, as the main catalog search engine. That was our main starting point, and **the goal was to improve the UI and UX of the OTB experience****, based on the user feedback, align it with the new Design System, and launch a beta version** to navigate at least 5% of the overall traffic to these new pages for further testing.  
+
+### User Research
+
+The goal of PM's user research was to understand what works on our current search page and what does not. We later worked together to leverage the research results and provide the best UX solution.  
+  
+The research included two parts, a satisfaction survey, and an in-depth questionnaire. Overall, 592 users took part in the surveys, and 76 of them answered the in-depth questions.**‍**
+
+![New layout suggestion](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62caba47e45b2d3339a97b31_Capture.PNG)
+
+**THE AVERAGE SATISFACTION LEVEL WITH THE SEARCH EXPERIENCE IS _MEDIUM (3.3_**), 50% COULDN'T FIND WHAT THEY WERE LOOKING FOR
+
+Here are some of the user feedback:
+
+‍_"Is the book [X] digitally readable?"_  
+‍  
+_"There is an online book, but it says I can not view it because I do not have permission! So why are you putting it in the catalog? For beauty?"_  
+  
+_"There is no way to browse through author lists, which makes it very difficult to find a particular author whose last name is known but whose first name is unknown."_  
+  
+_"The spaces between the items and the rows are very large, and you have to scroll a lot to get to the items. In my opinion (and I work and have worked with five library programs) it's better to have more items on the page..."_  
+‍  
+_"Sometimes you have to try a lot of keywords to search to find a result that was supposed to be available in the keywords you tried before"_**‍**
+
+### Key research conclusions
+
+**— Average satisfaction level with the search experience is _medium (3.3)  
+‍  
+_****Digital availability****_—_ There are many people searching online for _digital materials accessible from home_, but they are frustrated by both the lack of available materials and the _inaccurate marking of results_.  
+‍  
+****Search properties  
+****— Users of the in-depth survey, mostly researchers, do look for books, but also for other relevant materials (_no longer just books!_)  
+— Users are equally divided between those looking for a _particular item_ and those looking for items on a _particular topic_, and both scenarios need to be addressed  
+— There is still a demand for _catalog information_ - about 40% of those who responded to the in-depth survey searched for this type of information for various uses (not just "planning a visit" to the library)  
+‍  
+****Usability  
+****— Users wanted to _see more results_ without the need for additional loading / browsing, and to get more information on the screen to save scrolling  
+— Inquiry for less "sensitivity" to typos**  
+
+### UX Goals
+
+**Here are some of the goals that we set to address in design and specifications, based on the research conclusions:  
+‍  
+👉 Creating a** new and improved search interface**, which allows for a** **quick visual scan** **and** **adapted to the different types of material****👉 Improving predefined search capabilities (author only, title only) through** **autocomplete****👉** Reducing and **improving search filters****👉** **Consolidate all the materials** **into the main search  
+👉 Improving the** **accuracy of "online access" mark****  
+👉 Improving the sorting of results (****Ranking mechanism****)  
+👉 Improving** **topic-based search capabilities** **(suggesting more topics, auto-completion)  
+👉** **Combining different types of results** **(events, blog articles) with minimal damage to the** **"cleanliness" of the results page****  
+👉 Improving existing morphological mechanisms (****Morfix****)**  
+
+### Mapping existing features + examining options for adding new
+
+**Together with PM we worked on the feature table, to better understand the scope of work and the functionality of each single feature, both existing and the ones we wanted to add.**  
+
+![New layout suggestion](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62d136f16e8bed50fe13d703_feature-map.jpg)
+
+**FEATURE TABLE**
+
+### Competitive research/benchmark
+
+**Parallel to mapping features, I went through around 30 result pages of online digital archives and libraries, and also big e-commerce websites to check various solutions they provide that enrich search experience. And of course, our ultimate reference was Google.**  
+
+![New layout suggestion](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62caca3e38027f71dd1289e0_shutterstock.PNG)![](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62caca3fe45b2da9ddaa31cd_google.PNG)![](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62cacab809e7a243c5f29b4d_polona.PNG)![](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62caca3fe691b23b94701e13_norwegian.PNG)
+
+VARIOUS SEARCH SOLUTIONS
+
+### Benchmark highlights
+
+**— The most common way to display different type of results was** **tabs**  
+
+![New layout suggestion](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62d2ed31727756567773f028_search-tabs.png)
+
+GOOGLE AND THE NATIONAL LIBRARY OF NORWAY RESULTS PAGE
+
+**—** **Online access****: one of the ways to highlight this feature is to put it on the first place above all of the filters, like the Library of Congress does:**  
+
+![New layout suggestion](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62d2f28b459b10059ab3e2eb_loc-available-online.jpg)
+
+LIBRARY OF CONGRESS
+
+**—** **Filters position and behavior****: Ebay and Amazon probably have a good reason for placing filters in scrollable strips (my assumption: provides greater discoverability).**  
+
+![New layout suggestion](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62d31266a73d9094a79103e3_filters-amazon.PNG)
+
+AMAZON - MOBILE
+
+![New layout suggestion](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62d313a1af5e2e53f3a63a6f_filters-ebay.PNG)
+
+EBAY MOBILE
+
+### Design explorations
+
+**Together with my design colleague we explored two major design versions:** **version A** **and** **version B** **— with filters in a sidebar and filters on the top of the page very close to the search bar.**  
+
+![New layout suggestion](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62d3ff1acc6dd809acb7ec50_ver-A.PNG)
+
+MY DESIGN OPTION — **VERSION A** — WITH FILTERS BELOW THE SEARCH BAR. THIS POSITION SUPPORTED BY ICONS PROVIDE GREATER DISCOVERABILITY OF THE FILTERS
+
+![New layout suggestion](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62d3ff316105de6df93980e7_ver-B.PNG)
+
+**VERSION B** — MY DESIGNER COLLEGUE SHAHAR'S VERSION — FILTERS SIDE-BAR — ALLOW PLACING LARGE AMOUNT OF FILTERS WITHOUT MAKING USERS WORK TOO HARD TO GET TO THEM
+
+**In one hand, top location provided greater discoverability of the facets. In the other, researches show that people don’t like to scroll horizontally, and the big amount of filters will be a problem.  
+**  
+
+### Feature highlights
+
+![New layout suggestion](https://cdn.prod.website-files.com/5bb61eff5f2f3f5cc685d5d9/62d5bf3b8421b17ec54385e3_highlight-1.jpg)
+
+### Summary
+
+What was done:
+
+Updated the overall look & feel and aligned it with new Design System  
+  
+Created responsive (including missing mobile version) trilingual design  
+  
+
+After the release, we received a lot of positive feedback, both from our users and inside the organization.  
+  
+Credit to the incredible people I was privileged to work with on this project:  
+Product Management: Danny Streifler, Karin Tzadok  
+Design: Shahar Ben Sidi  
+Project Management: Eyal Tamam

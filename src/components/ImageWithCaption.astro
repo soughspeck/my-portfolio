@@ -1,0 +1,31 @@
+---
+const { src, alt, caption, className = "" } = Astro.props;
+---
+<figure class={`full-width-image ${className}`}>
+  <img src={src} alt={alt} loading="lazy" />
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>
+
+<style>
+  .full-width-image {
+    width: 100%;
+    margin: 1rem 0;
+    /*padding: 1rem;
+    background-color: #00FFBF;*/
+    text-align: center;
+  }
+
+  .full-width-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Optional: for rounded corners */
+  }
+
+  .full-width-image figcaption {
+    font-size:13px;
+    color: #64748B;
+    margin-top: 0.5rem;
+    font-family: 'Inter', sans-serif;
+  }
+</style>

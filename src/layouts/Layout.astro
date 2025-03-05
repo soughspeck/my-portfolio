@@ -1,0 +1,40 @@
+---
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+const { title } = Astro.props;
+import '@fontsource/inter/100.css';
+import '@fontsource/inter/200.css';
+import '@fontsource/inter/300.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/inter/800.css';
+import '@fontsource/inter/900.css';
+import '@fontsource/ibm-plex-sans/100.css';
+import '@fontsource/ibm-plex-sans/200.css';
+import '@fontsource/ibm-plex-sans/300.css';
+import '@fontsource/ibm-plex-sans/400.css';
+import '@fontsource/ibm-plex-sans/500.css';
+import '@fontsource/ibm-plex-sans/600.css';
+
+import '@fontsource/ibm-plex-mono';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna Hyatt</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <Header />
+    <h1>{title}</h1>
+    <main>
+      <slot />  <!-- Page content goes here -->
+    </main>
+    <Footer />
+  </body>
+</html>
+

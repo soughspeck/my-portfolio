@@ -1,0 +1,70 @@
+---
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+import HeroCover from "../components/HeroCover.astro";
+// 1. The frontmatter prop gives access to frontmatter and other data
+const { title, description } = Astro.props;
+import '@fontsource/inter/100.css';
+import '@fontsource/inter/200.css';
+import '@fontsource/inter/300.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/inter/800.css';
+import '@fontsource/inter/900.css';
+import '@fontsource/ibm-plex-sans/100.css';
+import '@fontsource/ibm-plex-sans/200.css';
+import '@fontsource/ibm-plex-sans/300.css';
+import '@fontsource/ibm-plex-sans/400.css';
+import '@fontsource/ibm-plex-sans/500.css';
+import '@fontsource/ibm-plex-sans/600.css';
+---
+
+
+<html>
+  <head>
+    <!-- Add other Head elements here, like styles and meta tags. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{title}</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <style>
+      
+      article {
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.8;
+        font-size: 1.1rem;
+      }
+      article h1, article h2, article h3 {
+        font-weight: bold;
+        margin-top: 1.5rem;
+      }
+      article a {
+        color: #2600ff;
+        text-decoration: none;
+      }
+      article p {
+        margin-bottom: 1rem;
+      }
+      article img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem auto;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article>
+    <h1>{title}</h1>
+    <description>{description}</description>
+    <slot /><!-- 2. Rendered HTML will be passed into the default slot. -->
+      </article>
+    </main>
+  <Footer />
+  </body>
+</html>

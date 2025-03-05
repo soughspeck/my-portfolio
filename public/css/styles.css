@@ -1,0 +1,202 @@
+/* styles.css */
+
+
+::selection {color: #ffffff; background: #2600ff;}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f0;
+    color: #2A3E52;
+    margin: 0;
+    word-wrap: break-word;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  
+  header {
+    background: #F5F5F1;
+    padding: 24px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space out items */
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items horizontally */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 24px;
+  }
+  
+  nav ul li a {
+    color: #2A3E52;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 52px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    
+}
+
+  h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-block-start: 0;
+    margin-block-end: 24px;
+   
+  }
+
+
+/*homepage*/
+
+  .container-intro {
+    box-sizing:border-box; 
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  
+  .case-study-link {
+    color: #2600ff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 49px;
+    padding-bottom: 58px;
+    padding-top: 78px;
+    min-height: 400px;
+  }
+
+  /*about page*/ 
+
+  .about-container {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 24px;
+    padding-bottom: 24px;
+    /* height: calc(100vh - 181px) !important; */
+  }
+
+  .about-text {
+    max-width: 60ch;
+    font-size: 21px;
+    line-height: 1.5;
+  }
+
+  .profile-pic {
+    max-width: 350px;
+    flex-shrink: 0;
+    border-radius: 12px;
+  }
+
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .hero {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+  /*footer*/
+
+  .footer {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 13px;
+  }
+  
+  .first {
+    padding-top: 24px;
+    border-top: 0.5px #2600ff solid;
+    }
+
+  footer a {
+      color: #2600ff; /* Set the link color to your desired color */
+      text-decoration: none; /* Remove underline */
+    }
+    
+    /* Optional: Change color on hover */
+    footer a:hover {
+      color: #2600ff; /* Change color on hover */
+    }
+
+
+
+    /* Mobile responsive styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack the header items vertically on small screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  /* index sections */
+  
+}
