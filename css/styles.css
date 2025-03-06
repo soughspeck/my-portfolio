@@ -1,5 +1,6 @@
 /* styles.css */
 
+
 ::selection {color: #ffffff; background: #2600ff;}
 
 body {
@@ -14,9 +15,9 @@ body {
     min-height: 100vh;
     padding-left: 2em;
     padding-right: 2em;
-}
+  }
   
-header {
+  header {
     background: #F5F5F1;
     padding: 24px 0;
     text-align: center;
@@ -27,62 +28,66 @@ header {
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Space out items */
     align-items: center;
-}
+  }
   
-nav ul {
+  nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-}
+    display: flex; /* Align items horizontally */
+  }
   
-nav ul li {
+  nav ul li {
     display: inline;
     margin-right: 24px;
-}
+  }
   
-nav ul li a {
+  nav ul li a {
     color: #2A3E52;
     text-decoration: none;
-}
+  }
 
-h1 {
+  h1 {
     font-family: 'Inter', sans-serif;
     font-size: 52px;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
-}
+  }
 
-h2 {
+
+  h2 {
     font-size: 18px;
     font-weight: 700;
     color: #1f2937;
     margin-top: 0;
     margin-bottom: 0;
+    
+    
 }
 
-h3 {
+  h3 {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
-}
+  }
   
-p {
+  p {
     line-height: 1.6;
     margin-block-start: 0;
     margin-block-end: 24px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px;
-}
+   
+  }
 
-/* Homepage specific styles */
-.container-intro {
-    box-sizing: border-box;
+
+/*homepage*/
+
+  .container-intro {
+    box-sizing:border-box; 
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -101,83 +106,64 @@ p {
     padding-bottom: 58px;
     padding-top: 78px;
     min-height: 400px;
-}
+  }
 
-.section-case-study {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 60px;
+  /*about page*/ 
+
+  .about-container {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
     gap: 24px;
-}
+    padding-bottom: 24px;
+    /* height: calc(100vh - 181px) !important; */
+  }
 
-.section-divider {
-    border-top: 0.5px #2600ff solid;
-    padding-top: 60px;
-}
+  .about-text {
+    max-width: 60ch;
+    font-size: 21px;
+    line-height: 1.5;
+  }
 
-.section-content {
-    width: 100%;
-}
+  .profile-pic {
+    max-width: 350px;
+    flex-shrink: 0;
+    border-radius: 12px;
+  }
 
-.section-image {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    border-radius: 8px;
-}
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .hero {
+    font-size: 24px;
+  }
 
-.section-image img {
-    max-width: 100%;
-}
-
-.case-study-link {
-    color: #2600ff;
-    text-decoration: none;
-}
-
-.dagshub-image {
-    background-color: #2600ff;
-}
-
-.nli-image {
-    background-color: #14b8a6;
-}
-
-.subtitle {
-    font-family: 'IBM Plex Mono', monospace;  
-    font-size: 14px;
-    color: #64748B;
-}
-
-.company-name {
-    color: #2563eb;
-    font-weight: 500;
-}
-
-ul {
-    font-family: 'IBM Plex Mono', monospace;
+  h1 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
     font-size: 16px;
-    padding-left: 20px;
+  }
 }
 
-li {
-    margin-bottom: 0.75rem;
-    position: relative;
-}
+  /*footer*/
 
-/* Footer styles */
-footer {
+  .footer {
     font-size: 13px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-
-.footer-row {
+  }
+  
+  .footer-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -185,66 +171,32 @@ footer {
     padding-bottom: 20px;
     width: 100%;
     font-size: 13px;
-}
-
-.first {
+  }
+  
+  .first {
     padding-top: 24px;
     border-top: 0.5px #2600ff solid;
-}
+    }
 
-footer a {
-    color: #2600ff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #2600ff;
-}
-
-/* Responsive styles */
-@media (min-width: 800px) {
-    .section-case-study {
-        flex-direction: row;
+  footer a {
+      color: #2600ff; /* Set the link color to your desired color */
+      text-decoration: none; /* Remove underline */
     }
     
-    .section-content {
-        width: 50%;
+    /* Optional: Change color on hover */
+    footer a:hover {
+      color: #2600ff; /* Change color on hover */
     }
-    
-    .section-image {
-        width: 50%;
-    }
-    
-    .section-case-study.reverse {
-        flex-direction: row-reverse;
-    }
-}
 
-@media (max-width: 800px) {
-    .about-container {
-        flex-direction: column;
-    }
-    .hero {
-        font-size: 24px;
-    }
-    h1 {
-        font-size: 32px;
-    }
-    h3 {
-        font-size: 24px;
-    }
-    p {
-        font-size: 16px;
-    }
-}
 
+
+    /* Mobile responsive styles */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    body {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
+  header {
+    flex-direction: column; /* Stack the header items vertically on small screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  /* index sections */
+  
 }

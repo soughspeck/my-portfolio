@@ -1,0 +1,69 @@
+<!DOCTYPE html><html data-astro-cid-et2zayma> <head><!-- Add other Head elements here, like styles and meta tags. --><meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="utf-8"><title></title><link rel="stylesheet" href="/css/styles.css"><style>.full-width-image[data-astro-cid-kundbcfo]{width:100%;margin:1rem 0;text-align:center}.full-width-image[data-astro-cid-kundbcfo] img[data-astro-cid-kundbcfo]{width:100%;height:auto;display:block;border-radius:8px}.full-width-image[data-astro-cid-kundbcfo] figcaption[data-astro-cid-kundbcfo]{font-size:13px;color:#64748b;margin-top:.5rem;font-family:Inter,sans-serif}
+</style>
+<link rel="stylesheet" href="/my-portfolio/_astro/dagshub-data-engine.DDvQW3pH.css"></head> <body data-astro-cid-et2zayma> <header> <nav> <ul> <li><a href="/my-portfolio">Anna Hyatt</a></li> <li><a href="/my-portfolio/about">About</a></li> </ul> </nav> </header> <main data-astro-cid-et2zayma> <article data-astro-cid-et2zayma> <h1 data-astro-cid-et2zayma></h1> <description data-astro-cid-et2zayma></description> <h1 id="data-management-tool-for-ml-engineers-from-design-to-shipment">Data management tool for ML Engineers from design to shipment</h1>
+<figure class="full-width-image " data-astro-cid-kundbcfo> <img src="/assets/data-engine-cover.svg" alt="DagsHub Data Engine" loading="lazy" data-astro-cid-kundbcfo>  </figure> 
+<p><strong>Time period</strong>
+September 2023 - now
+<strong>Role</strong>
+Lead Product Designer
+<strong>Links</strong>
+<a href="https://dagshub.com/Dean/COCO_1K/datasets?gallery=dataset&id=95">link to prod</a></p>
+<p>I will begin on one general note – the state of the domain I was working with. It is characterized by a lack of industry standards. AI dev tools are currently at the peak of their development, and growing pains were my constant companion. For me personally, that was also somewhat true, as I joined the company, expanding my responsibilities from being within a product team of 6 in a big and established institution, to becoming first and solo designer in a start-up. I was learning on the go about the new ways of working, the domain and dev tools in general. That was a challenge and opportunity for me at the same time.</p>
+<h3 id="problem-space-how-ml-engineers-work-with-data">Problem space: how ML engineers work with data?</h3>
+<p>The Data Engine feature project was initiated as a product decision to pivot the company’s efforts towards data management. Data is one of the most challenging components in the work of a Data Scientist/ML Engineer, especially when they have models in production and a constant need to gather, curate and maintain pipelines of data for their machine learning projects. To illustrate this cycle, let’s look at a PM diagram, which shows a value proposition defined for this feature.</p>
+<figure class="full-width-image " data-astro-cid-kundbcfo> <img src="../assets/data-engine-value-proposition.png" alt="Value proposition" loading="lazy" data-astro-cid-kundbcfo> <figcaption data-astro-cid-kundbcfo>Value proposition</figcaption> </figure> 
+<p>Before we started working, there was no easy way to visualize and filter users’ data on the platform, as all the infrastructure was looked like git directories, with no data-type specific previews for images, audio, video, tabular and other types of data. In addition to that, there was a need to create an advanced querying component, which would fit common practices for ML Engineers and other user personas, such as Annotators or ML Team Leads, who are the potential users of this feature.</p>
+<h3 id="goal-seamless-integration-into-an-existing-infrastructure">Goal: seamless integration into an existing infrastructure</h3>
+<p>The goal of this project was to create a component on the platform, that would be seamlessly integrated with other components, such as tracking and versioning code, data, experiments and annotations.</p>
+<h3 id="navigating-the-unknown">Navigating the unknown</h3>
+<p>At the beginning, the definition of the feature was very broad and vague. Given the scale and the extensive technical effort needed, my questions at the initial stage of the project remained unanswered, both from the dev leads and product stakeholders. At that point I could not gather a lot of information on the details of the implementation.</p>
+<p><em>What kind of filters would we like to develop? What are the requirements for them (e.g. input-based, range-based, time/date based, etc.)? How does the metadata look like? Are there specific categories? Is there 1-1 relationship between the metadata field and the value? etc.</em></p>
+<h3 id="poc-sales-demo">POC: sales demo</h3>
+<p>At the same time, we needed to move fast, and even without my questions answered, we needed to test our product hypothesis with potential customers. The first design version was decided to be a sales demo prototype. During the sales pitch, we asked for general and more specific feedback from potential clients. Therefore I decided to lean on my previous experience working with library catalog databases and search experience (see <a href="https://www.annahyatt.com/nli-search-system-redesign">NLI search redesign</a>), regardless of the yet-to-be defined requirements and specs, and refine and iterate on the way.</p>
+<p><em>We received a proof for our hypothesis, with lots of voices stating that collecting, maintaining and making sense of the data was one of the biggest challenges that ML Engineers and their teams are facing. And the solution we showed them was appreciated, providing transparency and visibility to the data pipelines for their model development projects.</em></p>
+<h3 id="research-and-design-1-competitor-research">Research and design: 1. Competitor research</h3>
+<p>I started my research by investigating competitor products with similar features, and putting notes or adding questions for stakeholders on noteworthy elements and design choices. Overall, I thoroughly went through 10 competitor products on the market.</p>
+<figure class="full-width-image " data-astro-cid-kundbcfo> <img src="../assets/competitors-review.png" alt="My FigJam board with competitor products review" loading="lazy" data-astro-cid-kundbcfo> <figcaption data-astro-cid-kundbcfo>My FigJam board with competitor products review</figcaption> </figure> 
+<p>This way, I got a rough understanding on how such a feature could look like. I identified the way other products solve common UX problems (e.g.: <em>how to present search and filtering, display metadata, display different types of media, how the connection between the code, data and models is presented and more</em>).  I also got insights on potentially interesting features we did not think of, and in general got a wide picture on current market landscape.</p>
+<h3 id="research-and-design-2-first-design-version">Research and design: 2. First design version</h3>
+<p>I started out with designing a general solution to provide the team with the sense of how the feature could look like when it will be developed. I also hoped that I would get more specific feedback and questions once the team will see the proposed solution in front of their eyes.</p>
+<figure class="full-width-image " data-astro-cid-kundbcfo> <img src="../assets/data-engine-first-design-mock.gif" alt="First design mock" loading="lazy" data-astro-cid-kundbcfo> <figcaption data-astro-cid-kundbcfo>First design mock</figcaption> </figure> 
+<p>As the first designer in the company, in parallel I was establishing the first Design System for the product, so I was designing and documenting every component for it.</p>
+<h3 id="research-and-design-3-domain-expert-interviews-and-feedback-sessions">Research and design: 3. Domain expert interviews and feedback sessions</h3>
+<p>When the first rough version of the design was ready, me and the PM conducted several  interviews with potential customers to discover their needs around this feature and hear feedback.</p>
+<figure class="full-width-image " data-astro-cid-kundbcfo> <img src="../assets/domain-experts-interview.jpg" alt="Feedback session with potential customer" loading="lazy" data-astro-cid-kundbcfo> <figcaption data-astro-cid-kundbcfo>Feedback session with potential customer</figcaption> </figure> 
+<p>Here are some of the questions and feedback from these interviews:</p>
+<blockquote>
+<p><em>– “I think that a big part of the value is to provide the API and not just the UI … when you talk about researchers that watch large datasets”</em><br/>
+<em>– “Most researches work via programming, it will be more natural for them to use”</em><br/>
+<em>– “It will allow researchers to integrate this with other tools they are using easily… for example, add function at the end of each training that generates the results visually…instead of trying to create this display again in the UI, I know what will be interesting for me to see at the end of each training so I’ll automatically have it generated”</em></p>
+</blockquote>
+<p>The feedback made us decide to move forward with building the backend API as the first stage of the project. In parallel, we looked for ways to bring as much value as we could using these capabilities.</p>
+<h3 id="design-partners">Design partners</h3>
+<p>To better define the design and specifications, we chose a product strategy called “design partnership”. During sales talks with potential customers, we presented my design mock and explained the value proposition. We then offered a discount for the feature in return for feedback while we were building it.<br/>
+This strategy proved to be a win-win. The clients received value from using the feature, and we, based on their feedback, better defined, improved, and shipped a product that provided more significant value.<br/>
+As a result, our understanding of the technical requirements for the feature evolved. In parallel I refined my mock as our dev team was building the first backend API capabilities.</p>
+<p><strong><em>Some of the questions still remained unanswered, and some of the clients’ requests were very specific for their use case, but overall, having these inputs proved to be very valuable, as we did not act in vacuum and expanded our list of paying customers.</em></strong></p>
+<h3 id="design-versions">Design versions</h3>
+<p>After a series of customers’ and potential customers’ interviews, together with the PM, we worked on defining the user flow for the feature, and I then created a user map. Things were starting to get much more clear.</p>
+<h3 id="user-flows">User flows</h3>
+<figure class="full-width-image " data-astro-cid-kundbcfo> <img src="../assets/data-engine-user-flows.png" alt="User flows" loading="lazy" data-astro-cid-kundbcfo> <figcaption data-astro-cid-kundbcfo>User flows</figcaption> </figure> 
+<p>My mock changed a lot, I iterated and refined it based on the clients feedback, and on the tech requirements I  received from the stakeholders.<br/>
+We continued to work with the PM, dev lead and CTO to define the scope for the first MVP.  I reduced the scope of my mock, and created another version only with the elements needed for the first MVP.<br/>
+The feature is still rolling out, and we’re receiving feedback from the design partners.<br/>
+Here are some of the inputs I received:</p>
+<blockquote>
+<p><em>“Wouldn’t</em> <strong><em>incorporating a text editor</em></strong> <em>be a valuable addition, providing more than just query construction? What are your thoughts on</em> <strong><em>implementing queries similar to SQL</em></strong><em>?”</em></p>
+</blockquote>
+<blockquote>
+<p><em>“It’s great that the query is fully translatable between UI and text!”</em></p>
+</blockquote>
+<blockquote>
+<p><em>”I think it is</em> <strong><em>very useful to see the number of items in each dataset</em></strong> <em>from the main “Sources” page. maybe also “</em><strong><em>created by</em></strong><em>” ? and “</em><strong><em>tags</em></strong><em>” attached to each dataset.”</em></p>
+</blockquote>
+<h3 id="conclusion">Conclusion</h3>
+<p>Here’s a current state of the <a href="https://dagshub.com/Dean/COCO_1K/datasets/dataset/269/gallery?metadata=WyJhbm5vdGF0aW9uIl0%3D">Data Engine feature in production</a>:</p>
+<figure class="full-width-image " data-astro-cid-kundbcfo> <img src="../assets/data-engine-production.png" alt="Data Engine screenshot from production" loading="lazy" data-astro-cid-kundbcfo> <figcaption data-astro-cid-kundbcfo>Data Engine screenshot from production</figcaption> </figure> 
+<p>The feature is still rolling out, and I’m listening and watching closely to user feedback. Overall, it received very good responses both from the clients and from the stakeholders.<br/>
+‍<br/>
+We were able to <strong>double the amount of paying customers</strong> by offering this feature roughly in half a year.</p><!-- 2. Rendered HTML will be passed into the default slot. --> </article> </main> <footer> <div class="footer-row first"> <a href="/assets/anna_hyatt_cv.pdf">Download my CV</a> <a href="https://www.linkedin.com/in/anna-hyatt-design/">Linkedin</a></div> <div class="footer-row">© Designed and developed with care 🪻 by me, Anna Hyatt, 2025</div> </footer> </body></html>
