@@ -8,6 +8,6 @@ export default defineConfig({
     root: "src",
     integrations: [mdx()],
     base: '/my-portfolio/', 
-    output: 'static'
+    output: 'static',
 
 });
