@@ -76,7 +76,7 @@ body {
     font-weight: 400;
   }
   
-  p {
+  p article {
     line-height: 1.6;
     margin-block-start: 0;
     margin-block-end: 24px;
@@ -146,9 +146,6 @@ body {
   }
   h3 {
     font-size: 24px;
-  }
-  p {
-    font-size: 16px;
   }
 }
 
