@@ -171,11 +171,13 @@ body {
 
 
   /* index sections */
+  
   .section-case-study {
     display: flex;
     flex-direction: row;
     margin-bottom: 60px;
     gap: 24px;
+    width: 100%;
   }
   
   .section-case-study.reverse {
