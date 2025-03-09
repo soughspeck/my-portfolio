@@ -268,6 +268,14 @@ body {
     font-size: 24px;
   }
 
+  p {
+    font-size: 13px;
+  }
+
+    ul {
+    font-size: 13px;
+  }
+  
   h1 {
     font-size: 32px;
   }
@@ -281,24 +289,21 @@ body {
     height: 200px;
   }
 
-  p {
-    font-size: 13px;
-  }
-
-    ul {
-    font-size: 13px;
-  }
-
   .section-case-study {
     flex-direction: column;
-  }
-
-  .section {
     margin-bottom: 24px;
   }
 
   
   .section-case-study.reverse {
     flex-direction: column;
+  }
+
+  .section-content {
+    width: 100%;
+  }
+
+  .section-image {
+    width: 100%;
   }
 }
