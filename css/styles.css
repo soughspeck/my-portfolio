@@ -3,6 +3,11 @@
 
 ::selection {color: #ffffff; background: #2600ff;}
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     line-height: 1.6;
@@ -202,6 +207,7 @@ body {
   }
   
   .section-image.nli {
+    width: 50%;
     padding: 0;
   }
 
