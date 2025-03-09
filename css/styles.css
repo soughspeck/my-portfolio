@@ -79,7 +79,6 @@ body {
     line-height: 1.6;
     margin-block-start: 0;
     margin-block-end: 24px;
-   
   }
 
 
@@ -284,6 +283,10 @@ body {
 
   h1 {
     font-size: 32px;
+  }
+
+  h2 {
+    font-size: 16px;
   }
 
   h3 {
