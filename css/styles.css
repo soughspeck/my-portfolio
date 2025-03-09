@@ -286,7 +286,7 @@ body {
   }
 
   .section-case-study {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .section {
