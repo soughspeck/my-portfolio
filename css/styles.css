@@ -201,6 +201,10 @@ body {
     box-sizing: border-box;
   }
   
+  .section-image.nli {
+    padding: 0;
+  }
+
   .section-image img {
     max-width: 100%;
   }
@@ -275,7 +279,7 @@ body {
     ul {
     font-size: 13px;
   }
-  
+
   h1 {
     font-size: 32px;
   }
