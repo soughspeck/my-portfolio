@@ -184,11 +184,11 @@ body {
   }
 
   .section-content {
-    
+    width: 50%;
   }
   
   .section-image {
-    
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -295,6 +295,6 @@ body {
 
   
   .section-case-study.reverse {
-    flex-direction: row-reverse;
+    flex-direction: column;
   }
 }
