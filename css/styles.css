@@ -58,8 +58,9 @@ body {
 
 
   h2 {
+    font-family: 'IBM Plex Mono', sans-serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     color: #1f2937;
     margin-top: 0;
     margin-bottom: 0;
@@ -225,12 +226,7 @@ body {
     background-color: #14b8a6;
   }
 
-  h2 {
-    font-family: 'IBM Plex Mono', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #1f2937;
-  }
+
   
   .subtitle {
     font-family: 'IBM Plex Mono', monospace;  
