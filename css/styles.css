@@ -316,4 +316,9 @@ body {
   .section-image {
     width: 100%;
   }
+
+  .section-image.nli {
+    width: 100%;
+    padding: 0;
+  }
 }
