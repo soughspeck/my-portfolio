@@ -127,9 +127,12 @@ body {
   }
 
   .profile-pic {
-    max-width: 350px;
     flex-shrink: 0;
     border-radius: 12px;
+    background-size: cover;
+    background-position: center; 
+    width: 350px; 
+    height: 350px;
   }
 
   /* Responsive layout - makes a one column-layout instead of a two-column layout */
@@ -146,6 +149,10 @@ body {
   }
   h3 {
     font-size: 24px;
+  }
+  .profile-pic {
+    width: 100%;
+    height: 200px;
   }
 }
 
@@ -219,6 +226,7 @@ body {
     justify-content: center;
     padding: 1rem;
     border-radius: 8px;
+    box-sizing: border-box;
   }
   
   .section-image img {
