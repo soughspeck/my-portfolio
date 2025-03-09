@@ -19,7 +19,10 @@ body {
   
   header {
     background: #F5F5F1;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 12px;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
     position: sticky;
     top: 0;
@@ -248,7 +251,7 @@ body {
   ul {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
-    padding-left: 8px;
+    padding-left: 24px;
   }
   
   li {
