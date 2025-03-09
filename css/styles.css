@@ -178,6 +178,10 @@ body {
     gap: 24px;
   }
   
+  .section-case-study.reverse {
+    flex-direction: row-reverse;
+  }
+
   .section-divider {
     border-top: 0.5px #2600ff solid;
     padding-top: 60px;
