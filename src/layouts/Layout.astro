@@ -3,9 +3,7 @@ import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 const { title } = Astro.props;
 import '@fontsource/inter';
-
 import '@fontsource/ibm-plex-sans';
-
 import '@fontsource/ibm-plex-mono';
 ---
 
@@ -14,11 +12,10 @@ import '@fontsource/ibm-plex-mono';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anna Hyatt</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/my-portfolio/css/styles.css" />
   </head>
   <body>
     <Header />
-    <h1>{title}</h1>
     <main>
       <slot />  <!-- Page content goes here -->
     </main>

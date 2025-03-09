@@ -63,8 +63,6 @@ body {
     color: #1f2937;
     margin-top: 0;
     margin-bottom: 0;
-    
-    
 }
 
   h3 {
@@ -76,7 +74,7 @@ body {
     font-weight: 400;
   }
   
-  p {
+  p article {
     line-height: 1.6;
     margin-block-start: 0;
     margin-block-end: 24px;
@@ -127,30 +125,13 @@ body {
   }
 
   .profile-pic {
-    max-width: 350px;
     flex-shrink: 0;
     border-radius: 12px;
+    background-size: cover;
+    background-position: center; 
+    width: 350px; 
+    height: 350px;
   }
-
-  /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .about-container {
-    flex-direction: column;
-  }
-  .hero {
-    font-size: 24px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  p {
-    font-size: 16px;
-  }
-}
 
   /*footer*/
 
@@ -189,14 +170,131 @@ body {
     }
 
 
+  /* index sections */
+  .section-case-study {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    gap: 24px;
+  }
+  
+  .section-divider {
+    border-top: 0.5px #2600ff solid;
+    padding-top: 60px;
+  }
 
-    /* Mobile responsive styles */
-@media (max-width: 768px) {
+  .section-content {
+    width: 100%;
+  }
+  
+  .section-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .section-image img {
+    max-width: 100%;
+  }
+  
+  .case-study-link {
+    color: #2600ff;
+    text-decoration: none;
+  }
+
+  .dagshub-image {
+    background-color: #2600ff;
+  }
+  
+  .nli-image {
+    background-color: #14b8a6;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f2937;
+  }
+  
+  .subtitle {
+    font-family: 'IBM Plex Mono', monospace;  
+    font-size: 14px;
+    color: #64748B;
+  }
+  
+  .company-name {
+    color: #2563eb;
+    font-weight: 500;
+  }
+  
+  p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+  }
+  
+  ul {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 0.75rem;
+    position: relative;
+  }
+  
+
+ /* Mobile Responsive layout - makes a one column-layout instead of a two-column layout */
+
+ @media (max-width: 800px) {
   header {
     flex-direction: column; /* Stack the header items vertically on small screens */
     align-items: flex-start; /* Align items to the start */
   }
 
-  /* index sections */
+  .about-container {
+    flex-direction: column;
+  }
+
+  .hero {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .profile-pic {
+    width: 100%;
+    height: 200px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+    ul {
+    font-size: 13px;
+  }
+
+  .section-case-study {
+    flex-direction: row;
+  }
+
+  .section {
+    margin-bottom: 24px;
+  }
+
   
+  .section-case-study.reverse {
+    flex-direction: row-reverse;
+  }
 }
