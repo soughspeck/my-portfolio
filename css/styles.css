@@ -288,14 +288,11 @@ body {
   .section-case-study {
     flex-direction: row;
   }
-  
-  .section-content {
-    width: 100%;
+
+  .section {
+    margin-bottom: 24px;
   }
-  
-  .section-image {
-    width: 100%;
-  }
+
   
   .section-case-study.reverse {
     flex-direction: row-reverse;
