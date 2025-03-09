@@ -184,11 +184,11 @@ body {
   }
 
   .section-content {
-    width: 100%;
+    
   }
   
   .section-image {
-    width: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
