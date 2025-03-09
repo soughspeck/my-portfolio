@@ -106,7 +106,7 @@ body {
   
   .hero {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 49px;
     padding-bottom: 58px;
     padding-top: 78px;
