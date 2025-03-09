@@ -248,8 +248,8 @@ body {
   
   ul {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px;
-    padding-left: 20px;
+    font-size: 14px;
+    padding-left: 8px;
   }
   
   li {
@@ -278,7 +278,7 @@ body {
     font-size: 13px;
   }
 
-    ul {
+  ul {
     font-size: 13px;
   }
 
