@@ -258,6 +258,15 @@ body {
     margin-bottom: 0.75rem;
     position: relative;
   }
+
+  a {
+    color: #2600ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration:line-through;
+  }
   
 
  /* Mobile Responsive layout - makes a one column-layout instead of a two-column layout */
