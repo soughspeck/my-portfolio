@@ -19,7 +19,10 @@ body {
   
   header {
     background: #F5F5F1;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 12px;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
     position: sticky;
     top: 0;
@@ -79,7 +82,6 @@ body {
     line-height: 1.6;
     margin-block-start: 0;
     margin-block-end: 24px;
-   
   }
 
 
@@ -249,12 +251,21 @@ body {
   ul {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
-    padding-left: 8px;
+    padding-left: 24px;
   }
   
   li {
     margin-bottom: 0.75rem;
     position: relative;
+  }
+
+  a {
+    color: #2600ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration:line-through;
   }
   
 
@@ -284,6 +295,10 @@ body {
 
   h1 {
     font-size: 32px;
+  }
+
+  h2 {
+    font-size: 16px;
   }
 
   h3 {

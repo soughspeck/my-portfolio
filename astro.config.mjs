@@ -7,7 +7,6 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
     root: "src",
     integrations: [mdx()],
-    base: '/my-portfolio/', 
     output: 'static',
 
 });

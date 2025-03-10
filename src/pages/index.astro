@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 ---
-<base href="https://soughspeck.github.io/my-portfolio/">
+
 
 <html lang="en">
 <head>
@@ -10,6 +10,7 @@ import Layout from "../layouts/Layout.astro";
   <title>Anna Hyatt</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 <Layout>
@@ -41,7 +42,7 @@ import Layout from "../layouts/Layout.astro";
           <ul>
               <li>I established processes for effective collaboration with devs (built and shipped company's first Design System, led Figma Workshop for developers)</li>
               <li>Drove end-to-end redesigns of essential user flows focusing on activation, simplification and retention (conducted usability testing, identified friction points via user recordings observation)</li>
-              <li>Conducted user surveys, analyzed sales talks to identify customer expectation gaps to promote user-centered decision-making</li>
+              <li>Conducted user surveys, analyzed sales talks to identify customer expectation gaps and promote user-centered decision-making</li>
               <li>Nurtured UX maturity in the company (weekly User Recordings Replays, UX Updates Newsletter)</li>
           </ul>
       </div>
@@ -80,9 +81,54 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </section>
 
-    <style>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  // Select elements by their specific classes
+  const heroElements = document.querySelectorAll('.hero');
+  const caseStudyElements = document.querySelectorAll('.section-case-study:not(.reverse)');
+  const caseStudyReverseElements = document.querySelectorAll('.section-case-study.reverse');
+  
+  // Function to set initial state
+  const setInitialState = (elements) => {
+    elements.forEach(element => {
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(24px)';
+      element.style.transition = 'opacity 1s ease-in-out, transform 1s ease-in-out';
+    });
+  };
+  
+  // Function to animate elements
+  const animateElements = (elements, startDelay) => {
+    elements.forEach((element, index) => {
+      setTimeout(() => {
+        element.style.opacity = '1';
+        element.style.transform = 'translateY(0)';
+      }, startDelay + (index * 50)); // Base delay + 50ms between each element
+    });
+  };
+  
+  // Set initial state for all elements
+  setInitialState(heroElements);
+  setInitialState(caseStudyElements);
+  setInitialState(caseStudyReverseElements);
+  
+  // Small delay to ensure styles are applied before animation starts
+  setTimeout(() => {
+    // First animate hero elements
+    animateElements(heroElements, 0);
+    
+    // Then animate case study elements (after all hero elements)
+    const caseStudyDelay = heroElements.length * 50 + 200; // Add extra 200ms between groups
+    animateElements(caseStudyElements, caseStudyDelay);
+    
+    // Finally animate case study reverse elements
+    const reverseDelay = caseStudyDelay + caseStudyElements.length * 50 + 200;
+    animateElements(caseStudyReverseElements, reverseDelay);
+  }, 100);
+});
+        </script>
         
-     
+    
 
   </main>
   
