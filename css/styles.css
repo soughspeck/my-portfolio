@@ -26,7 +26,7 @@ body {
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     width: 100%;
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Space out items */
@@ -108,6 +108,42 @@ body {
     padding-top: 78px;
     min-height: 400px;
   }
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Video inside modal */
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#modal-video {
+  width: 100%;
+  height: auto;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
 
   /*about page*/ 
 
