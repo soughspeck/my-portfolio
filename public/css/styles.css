@@ -268,6 +268,9 @@ body {
     text-decoration:line-through;
   }
   
+  .highlight {
+    color: #2600ff;
+  }
 
  /* Mobile Responsive layout - makes a one column-layout instead of a two-column layout */
 
@@ -332,4 +335,10 @@ body {
     padding: 0;
     width: 100%;
   }
+}
+
+@media (min-width: 1620px) {
+body {
+  padding: 0 20vw;
+}
 }
