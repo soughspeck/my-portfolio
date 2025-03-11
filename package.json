@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "astro build && gh-pages -d dist"
+    "deploy": "astro build && touch dist/CNAME && echo 'annahyatt.com' > dist/CNAME && gh-pages -d dist -b gh-pages --dotfiles"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.1.0",
@@ -20,3 +20,4 @@
     "gh-pages": "^6.3.0"
   }
 }
+
