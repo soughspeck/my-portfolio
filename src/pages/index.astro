@@ -19,7 +19,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="container-intro">
       <div class="hero-container">
        <div class="hero">
-        Hey, I'm Anna.</br> I'm a product designer with 7 years of experience in data-centered and dev products. I have been working both in <span class="highlight">a fast-paced tech start-up</span> and <span class="highlight">a large national institution.</span>
+        Hey, I'm Anna.</br> I'm a product designer with 7 years of experience in data-centered and dev products. I have been working both in <a href="#dagshub-index" class="highlight">a fast-paced tech start-up</a> and <a href="#nli" class="highlight">a large national institution.</a>
        </div>
        <div class="profile-pic" style="background-image: url('/assets/userpic_anna_3.jpeg' )">
         </div>
@@ -43,7 +43,7 @@ import Layout from "../layouts/Layout.astro";
         <section class="section-divider"></section>
 
         <!-- DagsHub Section -->
-    <section class="section-case-study">
+    <section id="dagshub-index" class="section-case-study">
       <div class="section-content">
           <h2>DagsHub MLOps</h2>
           <p class="subtitle">2022-now | Lead Product Designer | MLOps, B2B/B2C</p>
@@ -55,13 +55,6 @@ import Layout from "../layouts/Layout.astro";
           <p>
               I led the company's product design, through its evolution from a community platform to an enterprise solution. Over 2,5 years, I designed and shipped UX improvements for the whole platform, and led a major pivotal feature from ideation to production, which helped us double the amount of customers.
           </p>
-          
-          <ul>
-              <li>I established processes for effective collaboration with devs (built and shipped company's first Design System, led Figma Workshop for developers)</li>
-              <li>Drove end-to-end redesigns of essential user flows focusing on activation, simplification and retention (conducted usability testing, identified friction points via user recordings observation)</li>
-              <li>Conducted user surveys, analyzed sales talks to identify customer expectation gaps and promote user-centered decision-making</li>
-              <li>Nurtured UX maturity in the company (weekly User Recordings Replays, UX Updates Newsletter)</li>
-          </ul>
           <a href="/dagshub">Learn more</a>
       </div>
       
@@ -76,24 +69,15 @@ import Layout from "../layouts/Layout.astro";
 
   <section class="section-divider"></section>
       <!-- National Library of Israel Section -->
-    <section class="section-case-study reverse">
+    <section id="nli" class="section-case-study reverse">
       <div class="section-content">
           <h2>The National Library of Israel | Digital</h2>
           <p class="subtitle">2018-2022 | UI/UX Designer in a Product Team | Cultural Heritage, Digital Archive, B2C</p>
           
           <p>
-              At the National Library of Israel, our product team kept the site updated, usable, and engaging. I worked on site architecture, search engine improvements, and new content pages, prioritizing SEO and usability. These efforts brought 3M additional users to the platform.
+              At the <a href="https://nli.org.il">National Library of Israel</a>, our product team kept the site updated, usable, and engaging. I worked on site architecture, search engine improvements, and new content pages, prioritizing SEO and usability. These efforts brought 3M additional users to the platform.
           </p>
-          
-          <p>During my time in the Library,</p>
-          
-          <ul>
-              <li>I was part of a design and product team that led end-to-end design for core NLI products, including benchmarking, wireframing, and QA</li>
-              <li>Revamped site architecture with an SEO-first approach</li>
-              <li>Designed dozens of page templates and features, enhancing data accessibility and user experience</li>
-              <li>Established NLI's first Design System as part of the design team</li>
-              <li>The team achieved remarkable growth in monthly sessions, rising from 70,000 in 2018 to 1,900,000 in 2020, and reached 3,000,000 by 2023</li>
-          </ul>
+          <a href="/nli-search-system-redesign">Learn more</a>
       </div>
       
       <div class="section-image nli">
@@ -146,6 +130,28 @@ import Layout from "../layouts/Layout.astro";
     animateElements(caseStudyReverseElements, reverseDelay);
   }, 100);
 });
+
+document.querySelectorAll('a[href="#dagshub-index"], a[href="#nli"]').forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    
+    const targetID = this.getAttribute("href");
+    const target = document.querySelector(targetID);
+
+    if (target) {
+      const offset = 80; // Adjust this value based on your header height
+      const targetPosition = target.offsetTop - offset; // Corrected offset calculation
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
+
+
         </script>
         
     
