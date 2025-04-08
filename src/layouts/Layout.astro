@@ -2,14 +2,14 @@
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 const { title } = Astro.props;
-import '@fontsource/inter';
-import '@fontsource/ibm-plex-sans/100.css';
-import '@fontsource/ibm-plex-sans/200.css';
-import '@fontsource/ibm-plex-sans/300.css';
-import '@fontsource/ibm-plex-sans/400.css';
-import '@fontsource/ibm-plex-sans/500.css';
-import '@fontsource/ibm-plex-sans/600.css';
-import '@fontsource/ibm-plex-mono';
+import "@fontsource/inter";
+import "@fontsource/ibm-plex-sans/100.css";
+import "@fontsource/ibm-plex-sans/200.css";
+import "@fontsource/ibm-plex-sans/300.css";
+import "@fontsource/ibm-plex-sans/400.css";
+import "@fontsource/ibm-plex-sans/500.css";
+import "@fontsource/ibm-plex-sans/600.css";
+import "@fontsource/ibm-plex-mono";
 ---
 
 <html lang="en">
@@ -18,14 +18,30 @@ import '@fontsource/ibm-plex-mono';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anna Hyatt</title>
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Hotjar Tracking Code for https://annahyatt.com/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 5364783, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <Header />
     <main>
-      <slot />  <!-- Page content goes here -->
+      <slot />
+      <!-- Page content goes here -->
     </main>
     <Footer />
   </body>
 </html>
-
