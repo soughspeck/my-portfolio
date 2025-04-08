@@ -182,6 +182,15 @@ body {
     margin-bottom: 24px;
   }
 
+  .case-study-cover {
+    width: 100%;
+  }
+
+  .case-study-video-small {
+    width: 65%; 
+    margin-bottom: 8px;
+  }
+
   span.stats {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 42px;
@@ -350,7 +359,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
     border-radius: 8px;
     box-sizing: border-box;
   }

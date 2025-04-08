@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Anna Hyatt</title><link rel="stylesheet" href="css/styles.css"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"><link rel="icon" type="image/x-icon" href="favicon.ico"><link rel="stylesheet" href="/_astro/dagshub.Bs4tVCgY.css"></head> <body class="case-study-page"> <html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Anna Hyatt</title><link rel="stylesheet" href="/css/styles.css"><link rel="icon" type="image/x-icon" href="/favicon.ico"><!-- Hotjar Tracking Code for https://annahyatt.com/ --><script type="module">(function(t,s,n,h,j,e){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:5364783,hjsv:6},j=s.getElementsByTagName("head")[0],e=s.createElement("script"),e.async=1,e.src=n+t._hjSettings.hjid+h+t._hjSettings.hjsv,j.appendChild(e)})(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv=");</script></head> <body> <header> <nav> <ul> <li><a href="/">Anna Hyatt</a></li> <li><a href="assets/anna_hyatt_cv_2025.pdf" target="_blank">Download my CV</a></li> </ul> </nav> </header> <main>  <main> <div class="case-study-header"> <h2>Data management tool for ML Engineers E2E</h2> <p class="subtitle">DagsHub | Lead Product Designer | 2023–2024</p> <img class="case-study-cover" src="/assets/data-engine-cover.jpg" alt="Data Engine"> </div> <div class="case-study-section"> <h4>Learning a new role and domain</h4> <section class="section-divider"></section> <p>
+When I stepped into my role in 2022 — just before the initial AI
+            boom of early 2023 — I entered an evolving domain with no
+            established industry standards. AI development tools were rapidly
+            advancing, and with that came inevitable growing pains. In many
+            ways, I was growing alongside them.
+</p> <p>
+Transitioning from a structured, six-person product team at a large
+            company to being the solo designer at a startup was both a challenge
+            and an opportunity.
+</p> <p>Through this project, I faced two major challenges:</p> <ul> <li>
+Navigating a new domain with <strong>no established UX patterns</strong> </li> <li>
+Designing a foundational product experience <strong>without a clear set of requirements</strong> </li> </ul> <p></p> </div> <div class="case-study-section"> <h4>How do ML Engineers work with data?</h4> <section class="section-divider"></section> <p>
+The Data Engine feature was initiated as a product decision to pivot
+            the company’s efforts towards data management.
+</p> <p>
+In conversations with potential customers, we consistently heard
+            that managing data was one of the most challenging components in the
+            work of a Data Scientist/ML Engineer. Their current tools were
+            difficult to use — often adapted from general-purpose cloud storage
+            or internal scripts.
+</p> <p>
+Especially when they have models in production and a constant need
+            to gather, curate and maintain pipelines of data for their machine
+            learning projects.
+</p> <p>Key challenges surfaced repeatedly:</p> <ul> <li>
+Difficulty exploring large volumes of <strong>multimodal data</strong> (images, audio, tabular)
+</li> <li>
+No easy way to <strong>track which dataset was used in which model version</strong> </li> <li> <strong>Lack of visual tools</strong> to browse, curate, or query datasets
+</li> </ul> <p></p> <p>
+At the same time, the feature was new and needed to integrate
+            seamlessly with other platform components such as code, experiments,
+            and annotation workflows.
+</p> </div> <div class="case-study-section"> <h4>Using design prototypes to navigate the ambiguity</h4> <section class="section-divider"></section> <p>
+At the beginning, the definition of the feature was very broad and
+            vague. Given the scale and the extensive technical effort needed, my
+            questions at the initial stage of the project remained unanswered,
+            both from the dev leads and product stakeholders. At that point I
+            could not gather a lot of information on the details of the
+            implementation too.
+</p> <p>Some of the questions I had in mind:</p> <blockquote>
+What kind of filters would we like to develop?
+</blockquote> <blockquote>
+What are the requirements for them (e.g. input-based, range-based,
+            time/date based, etc.)?
+</blockquote> <blockquote>
+How does the metadata look like? Are there specific categories? Is
+            there 1-1 relationship between the metadata field and the value?
+            etc.
+</blockquote> <p>
+We had to move fast, and even without my questions answered, we
+            needed to test our product hypothesis with potential customers.
+</p> <p>
+My approach was to lean on my previous experience working with
+            library catalog databases and search experience (see <a href="/nli-search-system-redesign">NLI search redesign</a>), regardless of the yet-to-be defined requirements and specs, and
+            refine and iterate on the way.
+</p> <p>
+The first design versions were <strong>mock prototypes</strong>
+Thanks to the Design System <strong>Design System</strong> I established
+            by that time, I was able to create them with a lightning speed.
+</p> <p>
+The prototypes served as both a <strong>demo for customer calls</strong> and an <strong> anchor for internal discussions </strong>. It
+            helped reveal alignment gaps, technical limitations, and user
+            expectations far earlier than a traditional spec.
+</p> <video class="case-study-video-small" src="/assets/dagshub-first-sales-mock.mp4" width="100%" autoplay loop playsinline="">Your browser does not support the video tag.</video> <p class="caption">One of the early design prototypes</p> <p>
+The prototypes served as both <strong>a demo for customer calls</strong> and
+<strong>an anchor for internal discussions</strong>. It helped
+            reveal alignment gaps, technical limitations, and user expectations
+            far earlier than a traditional spec.
+</p> </div> <div class="case-study-section"> <h4>When filters fail: an insight from domain users</h4> <section class="section-divider"></section> <p>
+My prototype originally featured sidebar filters — a pattern I had
+            used effectively in the past. But during interviews with ML
+            engineers, I noticed a misalignment.
+</p> <blockquote>
+“Wouldn’t incorporating a text editor be a valuable addition,
+            providing more than just query construction? What are your thoughts
+            on implementing queries similar to SQL?”
+</blockquote> <blockquote>
+“I would like to be able to write my query right here, in the search
+            field: most of researches work is via programming, it will be more
+            natural for them to use”
+</blockquote> <p>
+I realized the <strong>
+filter UI model was misaligned with how our users conceptualize
+              data
+</strong>: as code, not categories. Instead of using common sidebar
+            filters, users wanted an <strong>input field</strong>, where they
+            could just type in their query! Saves so much real estate, and very
+            clear.
+</p> <img class="case-study-image" src="/assets/data-engine-feedback-session.jpg" alt="Customer feedback session"> <p class="caption">
+Feedback session with a potential customer using my prototype
+</p> </div> <div class="case-study-section"> <h4>Shifting to a query builder model</h4> <section class="section-divider"></section> <p>
+With this insight, I got back to the team, but their response was:
+</p> <ul> <li>
+Implementation of such thing is unrealistic in a foreseeable
+              future: it requires complex validation scenarios: syntax,
+              formatting, etc.
+</li> </ul> <p>
+So I got back to the drafting table and reworked the UI to reflect
+            both <strong>the mental model of our users AND the technical constraints.</strong> </p> <img class="case-study-cover" src="/assets/data-engine-filters-to-query-builder.jpg" alt="Filters to query builder"> <p>The revised interface introduced:</p> <ul> <li>
+A <strong>visual query builder</strong>, allowing users to define
+              SQL conditions using the UI, that would be easily translatable
+              into back-end query
+</li> <li>AND, OR, NOT conditions, and grouping</li> <li>
+As an addition, I suggested adding a <strong>snippet with a python query</strong> (the syntax aligns with the tools ML engineers already use, enabling
+              smooth integration with their workflows and minimizing context switching)
+</li> </ul> <p></p> <img class="case-study-cover" src="/assets/data-engine-query-builder-components.jpg" alt="Query builder components"> <p></p> <p>
+This approach preserved usability for less technical users (such as
+            Annotators, for example), while offering precision and familiarity
+            for experienced ML engineers.
+</p> <p>Post-launch feedback confirmed we were on the right track:</p> <blockquote>
+“It’s great that the query is fully translatable between UI and
+            code.”
+</blockquote> </div> <div class="case-study-section"> <h4>Working within constraints: designing an API-first MVP</h4> <section class="section-divider"></section> <p>
+Our engineering capacity prioritized backend and API development, so
+            the UI had to be lightweight in the first release. Much of the
+            actual logic-building happened via API calls, and the frontend
+            became at first visualization and query composition layer.
+</p> <p>
+I adjusted the design scope accordingly — defining a reduced MVP
+            version that still delivered user value and provided the foundation
+            for later expansion.
+</p> <video class="case-study-video-small" src="/assets/data-engine-api-first-mock.mp4" width="100%" autoplay loop playsinline>Your browser does not support the video tag.</video> <p class="caption">API-first MVP mock</p> </div> <div class="case-study-section"> <h4>Scaling with feedback: design partners and behavior tracking</h4> <section class="section-divider"></section> <p>
+We onboarded several design partners who received early access in
+            exchange for feedback. All converted into paying customers. I
+            tracked user sessions in Amplitude and LogRocket, which helped
+            identify quick wins:
+</p> <ul> <li>Removed unnecessary links in dataset lists</li> <li>Improved loading and empty states</li> <li>Provided responsive fixes for small screens</li> </ul> </div> <div class="case-study-section"> <h4>Outcomes and impact</h4> <section class="section-divider"></section> <p>
+Since the release, the feature has become <strong>major market differentiator</strong> for DagsHub, and consistently attracts new customers to the platform.
+<a href="https://dagshub.com/Dean/COCO_1K/datasets/dataset/96/gallery?metadata=WyJhbm5vdGF0aW9uIl0%3D">Check it out in production</a> </p> <ul> <li>Doubled the number of paying customers within six months</li> <li>Validated a UI model aligned with domain workflow</li> <li>
+Converted all early design partners into committed customers
+</li> </ul> </div> <div class="stats-wrapper"> <p><span class="stats">2X</span><br>customers within 6 months</p> <p><span class="stats">+7%</span><br>increase in conversion rate</p> <p><span class="stats">+20%</span><br>increase in engaged users</p> </div> <video src="/assets/dagshub-data-engine-video.mp4" width="100%" autoplay loop playsinline>Your browser does not support the video tag.</video> <div class="next-case-study"> <a href="/nli-search-system-redesign">Next case study: NLI Search System Redesign</a> </div> </main>  <!-- Page content goes here --> </main> <footer> <div class="footer-row first"> <a href="assets/anna_hyatt_cv_2025.pdf" target="_blank">Download my CV</a> <a href="https://www.linkedin.com/in/anna-hyatt-design/" target="_blank">Linkedin</a> </div> <div class="footer-row second"> <p class="footer-text">aesthyatt@gmail.com</p> <p class="footer-text">052-665-66-83</p> </div> <div class="footer-row">© Designed and developed with care by me, Anna Hyatt, 2025</div> </footer> </body></html> </body></html>
