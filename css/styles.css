@@ -207,10 +207,33 @@ body {
     margin-top: 24px;
   }
 
-  .next-case-study {
-    margin-top: 24px;
-    margin-bottom: 24px;
+  .link-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #2A3E52;
+    padding: 16px 0;
+    transition: color 0.2s ease;
+    border-top: 0.5px #2A3E52 solid;
   }
+  
+  .link-row:hover {
+    color: #2600ff;
+    border-color: #2600ff; /* Adjust as needed */
+  }
+  
+  .link-text {
+    font-size: 19px;
+    font-weight: 400;
+  }
+  
+  .link-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  
 
 /*homepage*/
 
@@ -359,7 +382,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
     box-sizing: border-box;
   }
 
