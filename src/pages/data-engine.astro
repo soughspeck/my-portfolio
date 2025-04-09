@@ -155,14 +155,6 @@ import Layout from "../layouts/Layout.astro";
             playsinline="">Your browser does not support the video tag.</video
           >
           <p class="caption">One of the early design prototypes</p>
-          <p>
-            The prototypes served as both <strong
-              >a demo for customer calls</strong
-            > and
-            <strong>an anchor for internal discussions</strong>. It helped
-            reveal alignment gaps, technical limitations, and user expectations
-            far earlier than a traditional spec.
-          </p>
         </div>
         <div class="case-study-section">
           <h4>When filters fail: an insight from domain users</h4>
@@ -172,11 +164,6 @@ import Layout from "../layouts/Layout.astro";
             used effectively in the past. But during interviews with ML
             engineers, I noticed a misalignment.
           </p>
-          <blockquote>
-            “Wouldn’t incorporating a text editor be a valuable addition,
-            providing more than just query construction? What are your thoughts
-            on implementing queries similar to SQL?”
-          </blockquote>
           <blockquote>
             “I would like to be able to write my query right here, in the search
             field: most of researches work is via programming, it will be more
@@ -196,8 +183,7 @@ import Layout from "../layouts/Layout.astro";
             src="/assets/data-engine-feedback-session.jpg"
             alt="Customer feedback session"
           />
-          <p class="caption">
-            Feedback session with a potential customer using my prototype
+          <p class="caption">Feedback session with a potential customer using my prototype
           </p>
         </div>
         <div class="case-study-section">
@@ -206,13 +192,11 @@ import Layout from "../layouts/Layout.astro";
           <p>
             With this insight, I got back to the team, but their response was:
           </p>
-          <ul>
-            <li>
+            <blockquote>
               Implementation of such thing is unrealistic in a foreseeable
               future: it requires complex validation scenarios: syntax,
               formatting, etc.
-            </li>
-          </ul>
+            </blockquote>
           <p>
             So I got back to the drafting table and reworked the UI to reflect
             both <strong
@@ -225,6 +209,7 @@ import Layout from "../layouts/Layout.astro";
             src="/assets/data-engine-filters-to-query-builder.jpg"
             alt="Filters to query builder"
           />
+          <p></p>
           <p>The revised interface introduced:</p>
           <ul>
             <li>
@@ -293,9 +278,9 @@ import Layout from "../layouts/Layout.astro";
             identify quick wins:
           </p>
           <ul>
-            <li>Removed unnecessary links in dataset lists</li>
-            <li>Improved loading and empty states</li>
-            <li>Provided responsive fixes for small screens</li>
+            <li>Removed <strong>unnecessary links</strong> in dataset lists</li>
+            <li>Improved <strong>loading and empty states</strong></li>
+            <li>Provided <strong>responsive fixes</strong> for small screens</li>
           </ul>
         </div>
         <div class="case-study-section">
@@ -329,11 +314,42 @@ import Layout from "../layouts/Layout.astro";
           loop
           playsinline>Your browser does not support the video tag.</video
         >
-<div class="next-case-study">
-  <a href="/nli-search-system-redesign"
-    >Next case study: NLI Search System Redesign</a
+        <p></p>
+      </div>
+<a href="/dagshub" class="link-row">
+  <span class="link-text">My journey at DagsHub MLOps</span>
+  <svg
+    class="link-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
   >
-</div>
+    <path d="M6 18L18 6M8.25 6H18V15.75" />
+  </svg>
+  </a>
+  <a href="/nli-search-system-redesign" class="link-row">
+    <span class="link-text">NLI Search System Redesign – case study</span>
+    <svg
+      class="link-icon"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M6 18L18 6M8.25 6H18V15.75" />
+    </svg>
+  </a>
       </main>
     </Layout>
   </body>
