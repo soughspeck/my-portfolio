@@ -10,7 +10,7 @@ import Layout from "../layouts/Layout.astro";
   <title>Anna Hyatt</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
 <Layout>
@@ -19,7 +19,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="container-intro">
       <div class="hero-container">
        <div class="hero">
-        Hey, I'm Anna.</br> I'm a product designer with 7 years of experience in data-centered and dev products. I have been working both in <a href="#dagshub-index" class="highlight">a fast-paced tech start-up</a> and <a href="#nli" class="highlight">a large national institution.</a>
+        Hey, I'm Anna.</br> I'm a senior product designer with 7 years of experience in data-centered and dev products. I have been working both in <a href="#dagshub-index" class="highlight">a fast-paced tech start-up</a> and <a href="#nli" class="highlight">a large national institution.</a>
        </div>
        <div class="profile-pic" style="background-image: url('/assets/userpic_anna_3.jpeg' )">
         </div>
@@ -51,12 +51,14 @@ import Layout from "../layouts/Layout.astro";
             <a href="https://www.dagshub.com">DagsHub</a> is an MLOps platform that helps companies to manage full AI training cycle all-in-one place. Data Engine is a tool that allows ML Engineers to browse, query and version their unstructured data, and became the company’s major market differentiator.</br>
             <p></p>
             <a href="/data-engine">Read the case study</a>
+            <p></p>
           </p>
       </div>
       
-      <div class="section-image dagshub-image">
-        <img src="/assets/data-engine-cover.svg" alt="Data Engine"></img>
-      </div>
+      <a href="/data-engine" class="section-image dagshub-image">
+        <div class="bg-zoom" style="background: url('assets/data-engine-cover.svg') no-repeat center center; background-size: cover; width: 100%; height: 100%; min-height: 400px;">
+        </div>
+      </a>
   </section>
 
   <section class="section-divider"></section>
@@ -70,11 +72,13 @@ import Layout from "../layouts/Layout.astro";
           <p></p>
               <a href="/dagshub">Read about my journey</a>
             </p>
+            <p></p>
       </div>
       
-      <div class="section-image">
-        <img src="/assets/dagshub-cover.png" alt="DagsHub"></img>
-      </div>
+      <a href="/dagshub" class="section-image">
+        <div class="bg-zoom" style="background: url('assets/dagshub-cover.png') no-repeat center center; background-size: cover; width: 100%; height: 100%; min-height: 400px;">
+        </div>
+      </a>
   </section>
 
     <section class="section-divider"></section>
@@ -82,20 +86,18 @@ import Layout from "../layouts/Layout.astro";
       <div class="section-content">
           <h2><a href="/nli-search-system-redesign" class="header-link">The National Library of Israel | Digital</a></h2>
           <p class="subtitle">2018-2022 | UI/UX Designer in a Product Team | Cultural Heritage, Digital Archive, B2C</p>
-          
           <p>
               At the <a href="https://nli.org.il">National Library of Israel</a>, our product team kept the site updated, usable, and engaging. I worked on site architecture, search engine improvements, and new content pages, prioritizing SEO and usability. These efforts brought 3M additional users to the platform.
           <p></p>
           <a href="/nli-search-system-redesign">Read the case study</a>
             </p>
-          <!-- <a href="/nli-search-system-redesign" class="link-inline">
-           <span class="inline-link-text">Read the case study</span>
-           </a> -->
+            <p></p>
       </div>
       
-      <div class="section-image nli">
-        <div style="background: url('assets/nli-search-redesign.jpeg') no-repeat center center; background-size: cover; width: 100%; height: 100%; min-height: 400px;">
-      </div>
+      <a href="/nli-search-system-redesign" class="section-image">
+        <div class="bg-zoom" style="background: url('assets/nli-search-redesign.jpeg') no-repeat center center; background-size: cover; width: 100%; height: 100%; min-height: 500px;">
+        </div>
+      </a>
     </section>
 
     <script>
