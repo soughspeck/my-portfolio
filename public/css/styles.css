@@ -495,6 +495,11 @@ body {
     font-size: 16px;
     padding-left: 24px;
   }
+
+  ol {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
   
   li {
     margin-bottom: 0.75rem;
