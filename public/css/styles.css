@@ -304,11 +304,23 @@ body {
     /* height: calc(100vh - 181px) !important; */
   }
 
-  .about-text {
-    max-width: 60ch;
-    font-size: 21px;
-    line-height: 1.5;
+  .about-container.reverse {
+    flex-direction: row-reverse;
   }
+
+  .about-container > * {
+    flex: 1;
+    min-width: 0;
+  }
+
+
+.about-text p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  /*font-style: italic;*/
+}
 
   .profile-pic {
     flex-shrink: 0;
@@ -319,6 +331,7 @@ body {
     height: 350px;
     min-height: 350px;
   }
+
   .link-inline {
     display: flex;
     flex-direction: row;
@@ -524,18 +537,13 @@ body {
   }
   
   .highlight {
+    font-style: italic;
     color: #2600ff;
     display: inline;
     text-decoration: none;
   }
 
-  .highlight:hover {
-    color: #2600ff;
-    text-decoration: underline;
-    text-decoration-color: #2600ff;
-    text-decoration-thickness: 2px; 
-    text-underline-offset: 10px;
-  }
+
 
  /* Mobile Responsive layout - makes a one column-layout instead of a two-column layout */
 
