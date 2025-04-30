@@ -280,6 +280,13 @@ body {
   .header-link {
     text-decoration: none;
     color: #2A3E52;
+    /*font-family: 'IBM Plex Serif', serif;/*
+    font-style: italic;
+    /*font-family: 'IBM Plex Mono', monospace;*/
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 0px;
   }
 
   .header-link:hover {
@@ -313,14 +320,21 @@ body {
     min-width: 0;
   }
 
+  .about-text {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
 
-.about-text p {
+
+  .about-text p {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
   /*font-style: italic;*/
-}
+  flex: 1;
+  }
 
   .profile-pic {
     flex-shrink: 0;
@@ -554,6 +568,10 @@ body {
   }
 
   .about-container {
+    flex-direction: column;
+  }
+
+  .about-text {
     flex-direction: column;
   }
 
