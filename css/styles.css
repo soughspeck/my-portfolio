@@ -71,7 +71,7 @@ body {
 
 
   h2 {
-    font-size: 22px;
+    font-size: 42px;
     font-weight: 500;
     color: #1f2937;
     margin-top: 0;
@@ -103,10 +103,11 @@ body {
 
   .case-study-page h4 {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 400;
     margin-block-start: 0;
-    margin-block-end: 1em;
+    margin-block-end: 8px;
   }
 
 .case-study-page p {
@@ -157,9 +158,10 @@ body {
    }
 
   .case-study-page blockquote {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 16px;
-    line-height: 28px;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 300;
     margin-block-start: 0;
     margin-block-end: 0;
     max-width: 80ch; 
@@ -167,7 +169,7 @@ body {
     border-left: 1px solid #2600ff;
     padding-left: 16px; /* Space between text and border */
     margin-left: 0; /* Removes default indentation */
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
   .case-study-wrapper {
     display: flex;
